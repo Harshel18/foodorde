@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Ordering Website</title>
+  <link rel="stylesheet" type="text/css" href="hs.css">
+</head>
+<body>
+  <header>
+    <h1>Food Ordering Website</h1>
+  </header>
+  <main>
+    <div id="menu">
+      <h2>Menu</h2>
+      <ul id="menu-list">
+        <li>
+          <h3>Item 1</h3>
+          <p>Description of item 1.</p>
+          <button class="order-button" onclick="addToCart('Item 1')">Order</button>
+        </li>
+        <li>
+          <h3>Item 2</h3>
+          <p>Description of item 2.</p>
+          <button class="order-button" onclick="addToCart('Item 2')">Order</button>
+        </li>
+        <li>
+          <h3>Item 3</h3>
+          <p>Description of item 3.</p>
+          <button class="order-button" onclick="addToCart('Item 3')">Order</button>
+        </li>
+      </ul>
+    </div>
+
+    <div id="customer-details">
+      <h2>Customer Details</h2>
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="phone-number" placeholder="Phone Number">
+      <input type="text" id="address" placeholder="Address">
+    </div>
+
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+      <button id="checkout-button" onclick="checkout()">Checkout</button>
+    </div>
+
+    <div id="order-summary">
+      <h2>Order Summary</h2>
+      <ul id="order-summary-items">
+        <!-- Order summary will be dynamically added here -->
+      </ul>
+    </div>
+
+    <button onclick="clearCheckout()">Clear Checkout</button>
+
+  </main>
+  <script src="hasjs.js"></script>
+</body>
+</html>
